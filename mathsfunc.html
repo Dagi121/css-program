@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<style>
+    #example1 {
+  background-image: url(dagi.jpg), url(3949.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-origin: border-box;
+  z-index: 1;
+}
+#grad {
+    display: block;
+  background-image: conic-gradient(red, yellow, green, blue, black);
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+}
+
+.div {
+  box-shadow: 10px 10px 5px lightblue inset;
+}
+
+#div1 {
+  position: absolute;
+  left: 50px;
+  width: calc(100% - 100px);
+  border: 1px solid black;
+  background-color: yellow;
+  padding: 5px;
+}
+#borderimg1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(dagi.jpg) 50 round;
+}
+
+#borderimg2 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30% stretch;
+  background-image: norepeat;
+}
+
+#borderimg3 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30% round;
+}
+</style>
+</head>
+<body>
+
+<h1>The calc() Function</h1>
+
+<p>Create a div that stretches across the window, with a 50px gap between both sides of the div and the edges of the window:</p>
+
+<div id="div1">Some text...</div>
+<div id="borderimg1">dagim</div>
+<div class="div" id="grad"></div>
+
+</body>
+</html>
