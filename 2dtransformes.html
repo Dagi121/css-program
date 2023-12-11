@@ -6,39 +6,33 @@ div {
   width: 300px;
   height: 100px;
   background-color: yellow;
-  border: 1px solid black;
+  border: none;
 }
 
-div#myDiv1 {
-  transform: matrix(1, -0.3, 0, 1, 0, 0);
+#myDiv {
+  transform: rotatez(50deg);
 }
-
-div#myDiv2 {
-  transform: matrix(1, 0, 0.5, 1, 150, 0);
-}
-.trans{
-    transform: skewX(1, 0.9 0.7, 1, 300, 2);
+#myDiv2{
+	transform: rotatez(90deg);
 }
 </style>
 </head>
 <body>
 
-<h1>The matrix() Method</h1>
-<p>The matrix() method combines all the 2D transform methods into one.</p>
+<h1>The rotateZ() Method</h1>
+
+<p>The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
 
 <div>
 This a normal div element.
 </div>
 
-<div id="myDiv1">
-Using the matrix() method.
+<div id="myDiv">
+This div element is rotated 90 degrees.
 </div>
+<div id="myDiv2"></div>
 
-<div id="myDiv2">
-Another use of the matrix() method.
-</div>
-
-<div class="trans"></div>
 </body>
 </html>
+
 
