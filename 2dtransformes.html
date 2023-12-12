@@ -1,38 +1,75 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-<style>
-div {
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .div{
+        width: 70px;
+        height: 70px;
+        transform: translate(200px, 140px);
+        background-color: red;
+      }
+      .div1{
+        width: 70px;
+        height: 70px;
+        transform: rotate(-90deg);
+        background-color: yellow;
+      }
+      .div2{
+        width: 50px;
+        height: 50px;
+        transform: scale(0.5, 0.5);
+        background-color: green;
+      }
+      .div3{
+        margin-left: 399px;
+        width: 50px;
+        height: 50px;
+        transform: scalex(3);
+        background-color: green;
+      }
+      .divo {
+        display: block;
   width: 300px;
   height: 100px;
   background-color: yellow;
-  border: none;
+  border: 1px solid black;
+  transform: skewy(20deg);
 }
-
-#myDiv {
-  transform: rotatez(50deg);
+.div4 {
+  display: block;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: skew(20deg, 10deg);
 }
-#myDiv2{
-	transform: rotatez(90deg);
+.matrix{
+  display: block;
+  margin: 400px;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(105, 105, 250);
+  border: 1px solid black;
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
 }
-</style>
-</head>
-<body>
-
-<h1>The rotateZ() Method</h1>
-
-<p>The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
-
-<div>
-This a normal div element.
-</div>
-
-<div id="myDiv">
-This div element is rotated 90 degrees.
-</div>
-<div id="myDiv2"></div>
-
-</body>
+.d3{
+  width: 300px;
+  height: 100px;
+  background-color: aqua;
+  transform: rotatez(150deg);
+}
+    </style>
+  </head>
+  <body>
+    <div class="div">translet</div>
+    <div class="div1">rotate</div>
+    <div class="div2">scale</div>
+    <div class="div3">scalex</div>
+    <div class="divo">divo</div>
+    <div class="div4">skew</div>
+    <div class="d3">3d dagim sime</div>
+    <div class="matrix">matrix</div>
+  </body>
 </html>
-
-
