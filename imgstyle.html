@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            img{
+                width: 33%;
+                height: 200px;
+                float: left;
+            }
+            .blur{
+                filter: blur(4px);
+            }
+            .contrast{
+                filter: contrast(180%);
+            }
+            .dropshadow{
+                filter: drop-shadow(10px 8px 8px gray);
+            }
+            .invert{
+                filter: invert(100%);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="dagi.jpg">
+            <img class="blur" src="dagi.jpg">
+            <img class="contrast" src="dagi.jpg">
+            <img class="invert" src="dagi.jpg">
+            <img class="dropshadow" src="dagi.jpg">
+        </div>
+    </body>
+</html>
