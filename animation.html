@@ -14,24 +14,40 @@
   50%  {background-color: blue;
         width: 300px;}
   100% {background-color: green;}*/
+  /*
   0%   {background-color:red; left:0px; top:0px;}
   25%  {background-color:yellow; left:200px; top:0px;}
   50%  {background-color:blue; left:200px; top:200px;}
   75%  {background-color:green; left:0px; top:200px;}
   100% {background-color:red; left:0px; top:0px;}
+*/
+0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  75% {background-color: coral;}
+  100% {background-color: green;}
 }
-
 /* The element to apply the animation to */
-div {
-    position: relative;
-  width: 100px;
+.dex{
+  margin: 0%;
+  padding: 0%;
+}
+.div {
+  width: 100%;
   height: 100px;
   animation-name: dagim;
   animation-duration: 5s;
+  animation-delay: 1s;
+  background-color: yellow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
 }
         </style>
     </head>
     <body>
-        <div>natty</div>
-    </body>
+      <div class="dex">
+        <div class="div">The jemaw</div>
+      </div>
+      </body>
 </html>

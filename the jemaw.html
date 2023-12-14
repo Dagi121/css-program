@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+@keyframes thejemaw {
+    0%
+    {background-image: url(3949.jpg);}
+
+    25%
+    {
+        background-color: coral;
+        width: 75%;
+        height: 500px;
+    }
+
+    50%
+    {
+        text-align: center;
+        font-size: larger;
+    }
+
+    75%
+    {
+        background-image: url(dagi.jpg);
+    }
+
+    100%
+    {background-color: green;}
+}
+/* The element to apply the animation to */
+.div {
+    margin: 60px;
+  width: 50%;
+  height: 300px;
+  animation-name: thejemaw;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  background-color: yellow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+        </style>
+    </head>
+    <body>
+      <div class="dex">
+        <div class="div">The jemaw</div>
+      </div>
+      </body>
+</html>
